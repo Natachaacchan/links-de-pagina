@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links para Páginas</title>
+    <style>
+        /* Estilos para a lista */
+        .pagination {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .pagination li a {
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .pagination li a:hover {
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para a página atual */
+        .pagination li.active a {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Lista de links usando ul e li -->
+<ul class="pagination">
+    <li><a href="#" aria-label="Anterior"><span aria-hidden="true">&laquo;</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li class="active"><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#" aria-label="Próxima"><span aria-hidden="true">&raquo;</span></a></li>
+</ul>
+</body>
+</html>
